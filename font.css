@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'inter';
+    src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: 'railway';
+    src: url(./fonts/Raleway-VariableFont_wght.ttf);
+}
+
+
+@font-face {
+    font-family: 'roboto-bold';
+    src: url(./fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'roboto-medium';
+    src: url(./fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'roboto-normal';
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'roboto-thin';
+    src: url(./fonts/Roboto-Light.ttf);
+}
+
+
+.roboto-bold{
+    font-family: 'roboto-bold';
+}
+.roboto-medium{
+    font-family: 'roboto-medium';
+}
+.roboto-normal{
+    font-family: 'roboto-normal';
+}
+.roboto-thin{
+    font-family: 'roboto-bold';
+}
+
+.railway{
+    font-family: 'roboto-thin';
+    
+}
+.inter{
+    font-family: 'inter';
+    
+}

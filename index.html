@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>P-Ticket</title>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="font.css">
+      <style>
+       
+      </style>
+   </head>
+   <body>
+      <!-- //header section -->
+      <header class="flex justify-between max-container  min-h-16 items-center mb-6  mt-5 "   >
+         <h2 class="logo railway font-extrabold text-4xl ">K-Ticket</h2>
+         <ul class="list capitalize railway font-medium text-[#030712B2] text-center flex justify-between gap-12">
+            <li class="">home</li>
+            <li>about</li>
+            <li>destination</li>
+            <li>search</li>
+         </ul>
+         <button class="btn border-2 border-[#1DD10066] text-[#1DD100] bg-[#1DD1001A] hover:bg-[#1cd10000] hover:border-[#000000cc] hover:text-black">
+            <p class=" hover:text-black">bus</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+               <path d="M4 17C4 17.5304 4.21071 18.0391 4.58579 18.4142C4.96086 18.7893 5.46957 19 6 19C6.53043 19 7.03914 18.7893 7.41421 18.4142C7.78929 18.0391 8 17.5304 8 17M4 17C4 16.4696 4.21071 15.9609 4.58579 15.5858C4.96086 15.2107 5.46957 15 6 15C6.53043 15 7.03914 15.2107 7.41421 15.5858C7.78929 15.9609 8 16.4696 8 17M4 17H2V6C2 5.73478 2.10536 5.48043 2.29289 5.29289C2.48043 5.10536 2.73478 5 3 5H17C18.3261 5 19.5979 5.7375 20.5355 7.05025C21.4732 8.36301 22 10.1435 22 12M8 17H16M16 17C16 17.5304 16.2107 18.0391 16.5858 18.4142C16.9609 18.7893 17.4696 19 18 19C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17M16 17C16 16.4696 16.2107 15.9609 16.5858 15.5858C16.9609 15.2107 17.4696 15 18 15C18.5304 15 19.0391 15.2107 19.4142 15.5858C19.7893 15.9609 20 16.4696 20 17M20 17H22V12M22 12H17.5L16 5M2 10H17M7 5V10M12 5V10" stroke="#1DD100" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+         </button>
+      </header>
+      <!-- hero section? -->
+      <div class="hero max-container min-h-[550px] w-full rounded-[32px] bg-gradient-to-t to-[#03071200] from-[#03071200] bg-no-repeat bg-cover bg-center pt-8" style="background-image: url('./images/banner.png'); ">
+         <!-- Your content goes here -->>
+         <div class="hero-grid flex flex-col items-center gap-6 max-w-[690px] text-center  ">
+            <h1 class="text-6xl leading-[86px] font-extrabold text-white text-center">
+               End-to-End Travel with <span class="block text-[#1DD100]">K Paribahan</span>
+            </h1>
+            <p class="inter text-lg text-[#ffffffb0] font-normal">
+               Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+            </p>
+            <a class="btn bg-[#1DD100] border-none px-6  bg-[#1DD1001A] hover:bg-[#42de48] hover:border-[#000000e8] hover:text-black" href="#buy" >
+            Buy Tickets
+            </a>
+         </div>
+      </div>
+      <!-- .contain section -->
+      <div class="wraper   max-container relative bottom-20">
+         <div class="countSection  grid grid-cols-3 gap-8 items-center  max-container px-20 min-h-40 max:min-h-56">
+            <div class="card flex gap-6 lg:max-w-80 flex-row py-8 px-6 justify-center border-b-2   border-b-[#1DD100] bg-white ">
+               <img src="./images/people.png" alt="" class="w-16" >
+               <div class="card-info order-2 ">
+                  <h2 class="inter text-4xl font-bold ">
+                  500K+
+                  </h3>
+                  <p class="inter text-base text-slate-500 font-normal">
+                     Registered users
+                  </p>
+               </div>
+            </div>
+            <div class="card flex gap-6 lg:max-w-80  flex-row py-8 px-6 justify-center border-b-2 border-b-[#1DD100] bg-white">
+               <img src="./images/ticket-cupon.png" alt="" class="w-16" >
+               <div class="card-info order-2 ">
+                  <h2 class="inter text-4xl font-bold ">
+                  1.7 lacks
+                  </h3>
+                  <p class="inter text-base text-slate-500 font-normal">
+                     Tickets sold
+                  </p>
+               </div>
+            </div>
+            <div class="card flex gap-6 lg:max-w-80  flex-row py-8 px-6 justify-center bg-white  border-b-2   border-b-[#1DD100]">
+               <img src="./images/stoppage.png" alt="" class="w-16  " >
+               <div class="card-info order-2 ">
+                  <h2 class="inter text-4xl font-bold ">
+                  80K+
+                  </h3>
+                  <p class="inter text-base text-slate-500 font-normal">
+                     Rental partners
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h2 class="text-4xl railway font-semibold text-[#030712] mb-10 text-center">Best offers for you</h2>
+      <div  id="couponSection" class="coupon max-container min-h-56  rounded-2xl grid grid-cols-2 gap-5 mb-10 ">
+         <div id="couponCard1" class="bg-[#FFBF0F] min-h-56 rounded-2xl   grid grid-cols-8 justify-between relative">
+            <div class="w-14 h-16 block bg-white rounded-full absolute right-[32.5%] -top-8">
+            </div>
+            <div class="w-14 h-16 block bg-white rounded-full absolute right-[32.5%] -bottom-8">
+            </div>
+            <div class="coupon-card-info border-r-2 border-dashed  col-span-5 py-12 px-10">
+               <h3 class="text-4xl font-black inter mb-3 text-[#030712CC]">
+                  15% OFF
+               </h3>
+               <h4 class="text-[#030712CC] mb-3 text-xl font-medium inter">
+                  on your next purchase
+               </h4>
+               <p class="inter font-normal text-lg text-[#03071280]">
+                  use by January 2024
+               </p>
+            </div>
+            <div class="copon-text col-span-3 pt-[70px] px-5 ">
+               <h3 class="  inter mb-2 text-black text-center railway text-3xl font-semibold  " id="couponOne">
+                  NEW15
+               </h3>
+               <p class="inter  text-[#03071280] text-center raileay font-normal text-xl " >
+                  Coupon Code 
+               </p>
+            </div>
+         </div>
+         <div id="couponCard2" class="bg-[#F78C9C] min-h-56 rounded-2xl   grid grid-cols-8 justify-between relative">
+            <div class="w-14 h-16 block bg-white rounded-full absolute right-[32.5%] -top-8">
+            </div>
+            <div class="w-14 h-16 block bg-white rounded-full absolute right-[32.5%] -bottom-8">
+            </div>
+            <div class="coupon-card-info border-r-2 border-dashed  col-span-5 py-12 px-10">
+               <h3 class="text-4xl font-black inter mb-3 text-[#030712CC]">
+                  20% OFF
+               </h3>
+               <h4 class="text-[#030712CC] mb-3 text-xl font-medium inter">
+                  on your next purchase
+               </h4>
+               <p class="inter font-normal text-lg text-[#03071280]">
+                  use by January 2024
+               </p>
+            </div>
+            <div class="copon-text col-span-3 pt-[70px] px-5 ">
+               <h3 class="  inter mb-2 text-black text-center railway text-3xl font-semibold  " id="couponTwo">
+                  Couple 20
+               </h3>
+               <p class="inter  text-[#03071280] text-center raileay font-normal text-xl ">
+                  Coupon Code 
+               </p>
+            </div>
+         </div>
+      </div>
+      <button class="btn border-[#1cd100be]  border-2 px-6 mx-auto block railway text-[#1DD100] mb-28 hover:bg-[#1cd10000] hover:border-[#000000cc] hover:text-black" type="button" >
+      See All Offers
+      </button>
+      <!-- main main main main main main main main main main main main -->
+      <main class="min-h-[600px] border-t-2 border-[#1DD100] rounded-t-[90px] bg-[#f7f8f8]  py-32">
+         <h2 class="text-4xl railway font-semibold text-[#030712] mb-10 text-center ph">
+            Kazi Paribahan
+         </h2>
+         <p class="inter text-lg text-[#03071299] font-normal mx-auto  text-center px-10 mb-12">
+            Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .
+         </p>
+         <div  class="bg-white min-h-[420px] rounded-2xl   grid grid-cols-8 justify-between relative max-container py-10 mb-8">
+            <div class="w-20 h-20 block bg-[#F7F8F8] rounded-full absolute right-[22.5%] -top-8">
+            </div>
+            <div class="w-20 h-20 block bg-[#F7F8F8] rounded-full absolute right-[22.5%] -bottom-8">
+            </div>
+            <div class="coupon-card-info border-r-2 border-dashed border-[#1DD100] col-span-6 px-8 ">
+               <div class="green-header flex justify-between items-center pr-14 mb-6">
+                  <div class="img&headings flex">
+                     <img src="./images/bus-logo.png" alt="big bus" class="max-w-[68px] ">
+                     <div class="heading pl-4 grid item-center justify-center grid-cols-1">
+                        <h3 class="  inter mb-2 text-black text-center railway text-3xl font-semibold  ">
+                           Greenline Paribahan
+                        </h3>
+                        <p class="inter text-lg text-[#03071299] font-normal   ">
+                           Coach-009-WEB ! AC_Business
+                        </p>
+                     </div>
+                  </div>
+                  <div id="seatLeftCard" class="p-4 bg-[#ddf8d9] flex flex-row max-w-48 rounded-xl justify-between items-center gap-2 max-h-14">
+                     <img src="./images/seat-green.png" alt="" class="w-7">
+                     <p class="text-lg text-[#1DD100] font-normal">
+                        <span id="seatLeft">40</span> Seats left
+                     </p>
+                  </div>
+               </div>
+               <div class="travelFrom  border-2 rounded-2xl block h-auto mr-14 bg-[#f7f8f8] min-h-64  p-8">
+                  <article class=" flex flex-row justify-between items-center pb-6 pt-2 border-b-2 border-dashed border-b-[#03071233]">
+                     <h2 class="railway text-lg font-medium text-[#03071299]">Route</h2>
+                     <h2 class="railway text-lg font-medium text-black ">Dhaka - Sylhet</h2>
+                  </article>
+                  <article class=" flex flex-row justify-between items-center py-6 border-b-2 border-dashed border-b-[#03071233]">
+                     <h2 class="railway text-lg font-medium text-[#03071299]">Departure Time</h2>
+                     <h2 class="railway text-lg font-medium text-black ">9:00 PM</h2>
+                  </article>
+                  <div class="small-grid grid grid-cols-3 justify-between items-center min-h-24 gap-4 mt-3">
+                     <div class="article  max-h-16 bg-[#ebecec] rounded-xl p-4 text-[14.5px] text-[#31353e] inter text-center font-normal">
+                        Boarding Point - Laxmipur
+                     </div>
+                     <div class="article  max-h-16 bg-[#ebecec] rounded-xl p-4 text-[15px] text-[#31353e] inter text-center font-normal">
+                        Dropping Point - Bogura
+                     </div>
+                     <div class="article  max-h-16 bg-[#ebecec] rounded-xl p-4 text-[15px] text-[#31353e] inter text-center font-normal">
+                        Est. Time - 11 Hour
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copon-text col-span-2 pt-[70px]  mt-12">
+                <img src="./images/fare.png" alt="taka-logo" class="mx-auto mb-3">
+                <h3 class="  inter  text-black  railway text-3xl font-semibold  text-center mb-2">
+                    550 Taka
+                    
+                 </h3>
+                 <p class="railway font-semibold text-[#696a71] text-2xl text-center">
+                    Per Seat
+
+                 </p>
+
+
+            </div>
+         </div>
+
+
+ <div class="ticketSection max-container border-2 pb-16  py-5 min-h-[600px] rounded-xl bg-white flex flex-row">
+
+
+    <section class="one  min-h-[900px] w-7/12  border-r-2 border-r-slate-400 border-dashed mt-4">
+       <h3 class="text-2xl font-medium text-black railway  pb-4  border-b-2 border-dashed border-slate-400 mx-4"> Select Your Seat</h3>
+       <div id="avalable" class="py-4 mx-4 border-b-2 border-dashed border-slate-400 flex flex-row justify-between items-center">
+        <article class="one flex gap-2 items-center" >
+            <img src="./images/seat-gray.png" alt="sofa">
+            <h3 class="text-lg font-normal text-[#03071280] inter">Available</h3>
+
+        </article>
+        <article class="one flex gap-2 items-center" >
+            <img src="./images/seat-green-filled.png" alt="sofa">
+            <h3 class="text-lg font-normal  inter">Selected</h3>
+
+        </article>
+
+       </div>
+       <div id="avalable" class="py-4  flex flex-row justify-between items-center">
+        <article class="one flex gap-2 items-center" >
+           
+
+        </article>
+       
+      
+
+       </div>
+
+
+       <ul class=" min-h-[400px]  pt-3" id="tickets-box">
+
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-4" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#fff]">A</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="e-btn">
+                     A1
+                  </button>
+                  <button class="e-btn">
+                     A1
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="e-btn">
+                     A1
+                  </button>
+                  <button class="e-btn bg-[#e6e6e7]">
+                     <img src="./images/while.svg" alt="">
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+
+
+
+
+
+
+
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">A</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     A1
+                  </button>
+                  <button class="t-btn">
+                     A2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     A3
+                  </button>
+                  <button class="t-btn">
+                     A4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+
+
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">B</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     B1
+                  </button>
+                  <button class="t-btn">
+                     B2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     B3
+                  </button>
+                  <button class="t-btn">
+                     B4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+
+
+
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">C</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     C1
+                  </button>
+                  <button class="t-btn">
+                     C2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     C3
+                  </button>
+                  <button class="t-btn">
+                     C4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+
+
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">D</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     D1
+                  </button>
+                  <button class="t-btn">
+                     D2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     D3
+                  </button>
+                  <button class="t-btn">
+                     D4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">E</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     E1
+                  </button>
+                  <button class="t-btn">
+                     E2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     E3
+                  </button>
+                  <button class="t-btn">
+                     E4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">F</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     F1
+                  </button>
+                  <button class="t-btn">
+                     F2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     F3
+                  </button>
+                  <button class="t-btn">
+                     F4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">G</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     G1
+                  </button>
+                  <button class="t-btn">
+                     G2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     G3
+                  </button>
+                  <button class="t-btn">
+                     G4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">H</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     H1
+                  </button>
+                  <button class="t-btn">
+                     H2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     H3
+                  </button>
+                  <button class="t-btn">
+                     H4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">I</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     I1
+                  </button>
+                  <button class="t-btn">
+                     I2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     I3
+                  </button>
+                  <button class="t-btn">
+                     I4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">J</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     J1
+                  </button>
+                  <button class="t-btn">
+                     J2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     J3
+                  </button>
+                  <button class="t-btn">
+                     J4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+
+
+
+       
+      </ul>
+       
+
+    </section>
+ <section class="two  min-h-full  w-5/12  px-5 mt-4" id="buy">
+   <h3 class="text-2xl font-medium text-black railway  pb-4  border-b-2 border-dashed border-slate-400 "> Review Your Seat</h3>
+   <div id="viewSection" class=" border-2 mt-6 rounded-xl bg-[#f7f8f8] ">
+      <ul class="h-full  max-w-full m-6 capitalize">
+         <li class="pb-4 mb-2 grid grid-cols-12  border-b-2 border-dashed border-slate-400">
+            <article class=" col-span-5 relative  flex items-center justify-start gap-2">
+              
+               <h6 class="inter text-base font-medium text-[#030712]">
+                  Seat
+               </h6>
+               <span class="bg-[#1DD100] w-8 h-4 rounded-md text-xs text-[#FFf] grid items-center justify-center " id="ticketSelectedCount">0</span>
+
+            </article>
+            <article class=" col-span-5 ">
+               <h6 class="inter text-base font-medium text-[#030712]">
+                 class
+               </h6>
+
+            </article>
+            <article class=" text-right col-span-2 ">
+               <h6 class="inter text-base font-medium text-[#030712]">
+               price
+               </h6>
+
+            </article>
+         </li>
+
+
+         <li class="addList " id="addList1">
+            
+
+           
+         </li>
+         <li class="addList" id="addList2">
+            
+
+           
+         </li>
+         <li class="addList" id="addList3">
+           
+
+           
+         </li>
+         <li class="addList" id="addList4">
+            
+
+           
+         </li>
+        
+      </ul>
+      
+
+
+
+
+      <div class="totalAndGrandTotal">
+         <ul class="h-full  max-w-full m-6 capitalize ">
+            <li class="pb-4  grid grid-cols-2  border-t-2 border-solid pt-2 border-slate-400">
+              
+               <article class=" col-span-1 ">
+                  <h6 class="inter text-base font-medium text-[#030712]">
+                     Total Price
+                  </h6>
+   
+               </article>
+               <article class=" text-right col-span-1 ">
+                  <h6 class="inter text-base font-medium text-[#030712]">
+                     BDT  <span id="total_Price">000</span>
+                  </h6>
+               </article>
+
+            </li>
+            
+
+            <li class=" p-2  grid grid-cols-4 bg-white justify-center items-center rounded-xl mb-5 " id="applyAndInput" >
+               <input type="text"  class="font-semibold text-lg px-4 py-2 border-none outline-none col-span-3 h-full " placeholder="Have any Coupon?" id="applyInput">
+               <button type="button" class="btn col-span-1 bg-[#1DD100] text-base text-white inter font-medium" disabled id="apply">
+                  Apply
+               </button>
+
+
+            </li>
+
+
+            <li class="pb-4  grid grid-cols-2  hidden" id="discountList-1">
+              
+               <article class=" col-span-1 ">
+                  <h6 class="inter text-sm font-normal text-[#030712]">
+                     Discount Amount
+                  </h6>
+   
+               </article>
+               <article class=" text-right col-span-1 ">
+                  <h6 class="inter text-sm font-normal text-[#030712]">
+                     BDT  <span id="coupon1">000</span>
+                  </h6>
+               </article>
+
+            </li>
+
+            <li class="pb-4  grid grid-cols-2 hidden " id="discountList-2"> 
+              
+               <article class=" col-span-1 ">
+                  <h6 class="inter text-sm font-normal text-[#030712]">
+                     Discount Amount
+                  </h6>
+   
+               </article>
+               <article class=" text-right col-span-1 ">
+                  <h6 class="inter text-sm font-normal text-[#030712]">
+                     BDT  <span id="coupon2">000</span>
+                  </h6>
+               </article>
+
+            </li>
+
+
+            <li class="pb-4  grid grid-cols-2  ">
+              
+               <article class=" col-span-1 ">
+                  <h6 class="inter text-base font-medium text-[#030712]">
+                     Grand Total
+                  </h6>
+   
+               </article>
+               <article class=" text-right col-span-1 ">
+                  <h6 class="inter text-base font-medium text-[#030712]">
+                     BDT  <span id="grand_Total">000</span>
+                  </h6>
+               </article>
+
+            </li>
+            
+
+   
+         </ul>
+
+      </div>
+
+
+
+   </div>
+
+
+   <form action="./face/success.html" class=" min-h-96 mt-6">
+      <label for="name" class="block inter text-base font-medium mb-3">Passenger Name*</label>
+      <input type="text" id="name" placeholder="Enter your name" class="block mb-3 outline-none w-full border-2 border-[#e6e6e7] h-16 px-3 py-2 inter text-base text-black rounded-xl">
+      <label for="number" class="block mb-3 inter text-base font-medium">Phone Number*</label>
+      <input type="number" id="number" inputmode="numeric" placeholder="Enter your phone number" required class="block outline-none w-full mb-3 border-2 border-[#e6e6e7] h-16 px-3 py-2 inter text-base text-black rounded-xl">
+      <label for="email" class="block mb-3 inter text-base font-medium">Email ID</label>
+      <input type="email" id="email" placeholder="Enter your email id" class="block outline-none w-full border-2 border-[#e6e6e7] h-16 px-3 py-2 inter text-base text-black rounded-xl">
+
+      <button disabled  id="next"  type="submit" class="mt-7 rounded-xl w-full h-14 btn bg-[#1DD100] uppercase text-xl railway font-extrabold text-white  bg-[#1DD1001A] hover:bg-[#000] hover:border-[#50ff56cc] hover:text-white">
+         Next
+
+      </button>
+
+   </form>
+   <div class="condition  flex gap-4 items-center justify-center mt-2">
+      <a href="" class="text-[#696a71] inter text-base font-normal underline">Terms and Conditions</a>
+      <a href="" class="text-[#696a71] inter text-base font-normal underline">Cancellation Policy</a>
+   </div>
+    
+   
+ </div>
+
+
+      </main>
+
+      <footer class="bg-[#030712] min-h-[457px] p-28">
+         <div class="footer-box max-container ">
+            <div class="flex min-h-44  border-b-2 border-stone-400 border-dashed">
+               <section class="w-1/2  min-h-32">
+                  <h2 class="text-[#fff] text-4xl font-extrabold railway mb-3">
+                     k-Ticket
+                  </h2>
+                  <p class="max-w-96  text-[#FFFFFFCC] font-normal text-lg inter leading-7">
+                     k-Ticket is a digital platform to make your daily commuting better.
+                  </p>
+               </section>
+               <section class="w-1/2   relative  text-left">
+                  <h3 class="railway text-xl text-white font-medium text-right">
+                     Download our app
+                  </h3>
+                  <img src="./images/googleplay.svg" alt="" class="m-auto absolute right-0 mt-3">
+               </section>
+            </div>
+
+            <div class="flex justify-between mt-5">
+               
+                  <div >
+                     <p class="text-[#696a71] inter text-base font-normal">
+                        @all rights reserved, k-Ticket services limited.2024
+                     </p>
+                    
+                  </div>
+               <div class=" flex justify-between gap-4">
+                  <a href="" class="text-white inter text-base font-normal ">Terms and Conditions</a>
+                     <a href="" class="text-white inter text-base font-normal ">Return & refund policy</a>
+                     <a href="" class="text-white inter text-base font-normal ">Cancellation Policy</a>
+
+               </div>
+            </div>
+         </div>
+      </footer>
+      
+
+
+      <script src="script.js"></script>
+      <!-- <script src="tailwind.config.js"></script> -->
+   </body>
+</html>

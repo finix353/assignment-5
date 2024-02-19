@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.max-container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;  
+}
+.t-btn{
+    font-size: 15px;
+    font-family: inter;
+    padding: 1.1em 2.7em;
+    border-radius: 10px;
+    border:1px solid rgba(0, 0, 0, 0);
+    background-color: #f7f8f8 ;
+    width: 110px;   
+}
+.e-btn{
+    color: #fff;
+    font-size: 15px;
+    font-family: inter;
+    padding: 1em 2.7em;
+    border-radius: 10px;
+    border:1px solid rgba(0, 0, 0, 0);
+    height: 56px;
+    width: 110px;
+    
+}
+.w-btn{
+    width: 4em;
+    font-size: 18px;
+    font-family: inter;
+    padding: 0.5em 2.2em;
+    border-radius: 10px;
+    border:1px solid rgba(0, 0, 0, 0);
+   
+    width: 110px;
+    height: 56;
+
+}
+
+
+.addList{
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    padding-top: 0.5rem/* 20px */;
+    padding-bottom: 0.5rem/* 20px */;
+    
+   
+}
+
+.addListText-1{
+    color: rgba(3, 7, 18, 0.60);
+
+order: 1;
+    font-family: 'inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    grid-column: span 5 / span 5;
+    
+}
+.addListText-2{
+    color: rgba(3, 7, 18, 0.60);
+
+    order: 2;
+    font-family: 'inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    grid-column: span 5 / span 5;
+    
+}
+.addListText-3{
+    color: rgba(3, 7, 18, 0.60);
+
+order: 3;
+    font-family: 'inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    grid-column: span 2 / span 2;
+    text-align: right;
+    
+}
+input[type=number]::-webkit-inner-spin-button{
+    display: none;
+}
+
+main{
+    background-color: #212121;
+}
+ .railway{
+ font-family: 'railway';
+ }
+
+ 
